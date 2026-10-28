@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e8f6fe">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="Thi thử Địa lí lớp 7: 28 câu trắc nghiệm, 5 câu đúng sai gồm 20 nhận định, chạm đáp án biết kết quả ngay, miễn phí trên điện thoại.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Thi thử Địa lí 7 — Chạm đáp án, biết ngay kết quả">
+  <meta property="og:description" content="48 lượt trả lời · Chấm đúng/sai ngay · Tự tính điểm · Dùng được trên điện thoại">
+  <meta name="format-detection" content="telephone=no">
+  <title>Thi thử Địa lí 7 · Chấm ngay · Mobile</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+  :root {
+    color-scheme: light;
+    --bg:#f3f9fd; --white:#fff; --ink:#1d3242; --muted:#556a79;
+    --edge:#cfe2ed; --blue:#176994; --blue-2:#dff1fb; --blue-dark:#0d4c71;
+    --green:#146b4b; --green-bg:#e4f6ed; --red:#9e2639; --red-bg:#ffebed;
+    --shadow:0 10px 35px rgba(13,71,111,.07);
+  }
+  * { box-sizing:border-box }
+  html { scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+  body { margin:0; min-width:0; font-family:system-ui,-apple-system,'Segoe UI',Roboto,Arial,sans-serif; background:var(--bg); color:var(--ink); line-height:1.55; overflow-wrap:anywhere; }
+  button { font:inherit; cursor:pointer; touch-action:manipulation; }
+  button:disabled { cursor:default; }
+  button:focus-visible,a:focus-visible { outline:3px solid #f29c38; outline-offset:3px; }
+  .wrap { max-width:820px; margin:auto; padding-inline:clamp(14px,4vw,28px); }
+  .header { padding:24px 0 20px; background:linear-gradient(115deg,#e7f8ff,#e1f4fc 60%,#fff5ed); border-bottom:1px solid var(--edge); }
+  .eyebrow { text-transform:uppercase; letter-spacing:1.2px; font-size:11px; font-weight:800; color:#356981; }
+  h1 { font-size:clamp(24px,5.2vw,35px); letter-spacing:-.7px; line-height:1.22; margin:7px 0 5px; }
+  .header p { color:var(--muted); font-size:14px; margin:0; }
+  .status { position:sticky; top:0; z-index:5; background:rgba(255,255,255,.97); border-bottom:1px solid var(--edge); backdrop-filter:blur(10px); }
+  .status-row { display:flex; justify-content:space-between; align-items:center; gap:10px; min-height:55px; padding-top:8px; padding-bottom:8px; }
+  .count { font-size:14px; font-weight:750; white-space:nowrap; }
+  .points { font-size:13px; font-weight:750; color:var(--blue-dark); text-align:right; }
+  .meter { height:5px; background:#e6eef4; width:100%; }
+  .meter-fill { height:100%; width:0; background:linear-gradient(90deg,#45b7a0,#2189ba); transition:width .18s ease; }
+  main { padding:17px 0 120px; }
+  .utility { display:flex; align-items:center; justify-content:space-between; gap:8px; flex-wrap:wrap; margin:8px 0 13px; }
+  .pill { border:1px solid var(--edge); background:#fff; color:var(--blue-dark); border-radius:999px; min-height:44px; padding:8px 13px; font-size:13px; font-weight:750; }
+  .pill:hover:not(:disabled) { background:var(--blue-2); }
+  .pill.negative { color:var(--red); }
+  .card { border:1px solid var(--edge); background:#fff; border-radius:20px; padding:clamp(17px,4vw,27px); box-shadow:var(--shadow); }
+  .tag { color:var(--blue-dark); font-size:12px; letter-spacing:.3px; text-transform:uppercase; font-weight:800; }
+  .question-title { margin:8px 0 17px; font-size:clamp(19px,4.7vw,23px); line-height:1.42; font-weight:750; }
+  .help { color:var(--muted); font-size:14px; margin:0 0 14px; }
+  .options { display:grid; grid-template-columns:1fr; gap:10px; }
+  .option { width:100%; min-height:54px; text-align:left; display:flex; gap:12px; align-items:center; border:1.5px solid #cfdfe9; border-radius:13px; padding:12px; background:#fff; color:var(--ink); font-size:clamp(15px,3.8vw,17px); line-height:1.45; }
+  .option:hover:not(:disabled) { background:#f0f9fe; border-color:#8dbfd6; }
+  .option .letter { display:inline-grid; place-items:center; border-radius:10px; min-width:33px; height:33px; font-weight:800; font-size:14px; background:#edf5f9; color:var(--blue-dark); flex:none; }
+  .option.right { background:var(--green-bg); border-color:#4baf83; }
+  .option.right .letter { background:#bfe7d0; color:var(--green); }
+  .option.wrong { background:var(--red-bg); border-color:#cf7884; }
+  .option.wrong .letter { background:#f7d2d9; color:var(--red); }
+  .option.dim { opacity:.65; }
+  .feedback { margin-top:13px; padding:13px 14px; border-radius:12px; border:1px solid; font-size:14px; }
+  .feedback.good { background:var(--green-bg); border-color:#b5e2cc; color:var(--green); }
+  .feedback.bad { background:var(--red-bg); border-color:#f0bac2; color:var(--red); }
+  .feedback b { font-weight:800; }
+  .feedback-detail { margin-top:4px; color:var(--ink); }
+  .reading { border-left:4px solid #9bc7dc; padding:13px 15px; margin:8px 0 20px; background:#f7fbfd; border-radius:8px; font-size:15px; line-height:1.65; }
+  .tf-group { margin-top:14px; }
+  .tf-item { border-top:1px solid var(--edge); padding:18px 0 2px; }
+  .tf-item:first-child { border-top:0; padding-top:0; }
+  .tf-item h3 { font-size:16px; margin:0 0 12px; font-weight:650; }
+  .tf-opts { display:grid; grid-template-columns:1fr 1fr; gap:10px; }
+  .tf-opts .option { justify-content:center; min-height:50px; text-align:center; }
+  .nav-bottom { position:sticky; bottom:0; z-index:4; background:rgba(255,255,255,.98); border-top:1px solid var(--edge); padding:11px 0 calc(11px + env(safe-area-inset-bottom,0px)); box-shadow:0 -8px 28px rgba(19,63,89,.07); margin-top:20px; }
+  .nav-actions { display:flex; gap:10px; }
+  .main-btn { border-radius:13px; min-height:49px; padding:11px 15px; border:1px solid #1f779e; background:#197da9; color:white; font-weight:800; width:100%; }
+  .main-btn:disabled { opacity:.4; }
+  .main-btn.secondary { background:white; color:var(--blue-dark); border-color:var(--edge); }
+  .main-btn.secondary:disabled { background:#f5f8fa; }
+  .hint { font-size:12.5px; color:var(--muted); margin:15px 2px 0; }
+  .results { text-align:center; }
+  .score-number { font-size:clamp(48px,10vw,72px); font-weight:850; color:var(--blue-dark); line-height:1.1; margin:6px 0 9px; font-variant-numeric:tabular-nums; }
+  .result-metrics { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:18px 0; text-align:left; }
+  .metric { padding:12px; border:1px solid var(--edge); border-radius:12px; background:#f9fcfd; }
+  .metric strong { display:block; font-size:23px; font-variant-numeric:tabular-nums; }
+  .metric span { color:var(--muted); font-size:12px; }
+  .result-actions { display:grid; gap:10px; margin-top:22px; }
+  .review-title { text-align:left; font-weight:800; margin:22px 0 9px; }
+  .review-list { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:7px; }
+  .review-jump { min-height:39px; border-radius:9px; background:#fff; border:1px solid var(--edge); font-size:13px; font-weight:750; }
+  .review-jump.done-good { background:var(--green-bg); border-color:#a5d3bc; color:var(--green); }
+  .review-jump.done-bad { background:var(--red-bg); border-color:#e7adb4; color:var(--red); }
+  .review-jump.not-done { color:var(--muted); }
+  .small-note { color:var(--muted); font-size:13px; margin:10px 0 0; }
+  footer { font-size:12px; color:var(--muted); text-align:center; margin-top:17px; }
+  [hidden] { display:none!important; }
+  @media (min-width:700px) { .options { grid-template-columns:1fr 1fr; } .nav-bottom { position:static; background:transparent; border:0; box-shadow:none; padding:0; } .nav-actions { justify-content:flex-end; } .nav-actions .main-btn { max-width:220px; } .review-list { grid-template-columns:repeat(11,minmax(0,1fr)); } }
+  @media (max-width:370px) { .status-row { gap:5px; } .count,.points { font-size:12px; } .pill { padding:7px 10px; font-size:12px; } .card { border-radius:15px; padding:15px; } .option { padding:11px 10px; } .option .letter { min-width:30px; height:30px; } }
+  @media (prefers-reduced-motion:reduce) { *,*::before,*::after { scroll-behavior:auto!important; transition:none!important; } }
+  @media print { .header { background:white; } .utility,.status,.nav-bottom,.feedback,.result-actions,.review-list { display:none!important; } body { background:white; } main { padding:0; } .card { border:0; box-shadow:none; padding:0; } }
+  </style>
+</head>
+<body>
+<header class="header"><div class="wrap">
+  <div class="eyebrow">Luyện tập giữa học kì I · 2026–2027</div>
+  <h1>Thi thử Địa lí lớp 7</h1>
+  <p>28 câu trắc nghiệm · 20 nhận định Đúng/Sai · Chạm để biết kết quả ngay</p>
+</div></header>
+<div class="status" aria-label="Tiến độ làm bài"><div class="wrap status-row">
+  <span class="count" id="progressText">Đã làm 0/48</span>
+  <span class="points" id="scoreText">Đúng 0 · Sai 0</span>
+</div><div class="meter"><div id="meterFill" class="meter-fill"></div></div></div>
+<main class="wrap" id="main">
+  <div class="utility">
+    <span class="pill" id="stepText" aria-live="polite">Câu 1/28 · Trắc nghiệm</span>
+    <div style="display:flex;gap:6px;flex-wrap:wrap"><button type="button" class="pill" id="jumpResult">Xem điểm</button><button type="button" class="pill negative" id="restart">Làm lại</button></div>
+  </div>
+  <div id="stage" aria-live="off"></div>
+  <p class="hint" id="bottomHint">Mỗi câu chỉ được chọn một lần. Đáp án đúng và giải thích sẽ hiện ngay sau khi chạm.</p>
+  <footer>Đề biên tập từ ảnh ôn tập được cung cấp; điểm chỉ dùng để tự luyện. Không thu thập tên, tài khoản hay đáp án lên máy chủ.</footer>
+</main>
+<nav class="nav-bottom" aria-label="Điều hướng câu hỏi"><div class="wrap nav-actions">
+  <button type="button" class="main-btn secondary" id="prev">← Trước</button>
+  <button type="button" class="main-btn" id="next">Tiếp →</button>
+</div></nav>
+<script>
+'use strict';
+const DATA={"mcq":[{"question":"Châu Âu có diện tích khoảng","options":["8,5 triệu km².","10 triệu km².","18 triệu km².","44,4 triệu km²."],"answer":"B","explanation":"Châu Âu rộng khoảng 10 triệu km²."},{"question":"Con sông dài nhất châu Âu là","options":["Đa-nuýp.","Rai-nơ.","Von-ga.","Đni-ép."],"answer":"C","explanation":"Sông Von-ga là sông dài nhất châu Âu."},{"question":"Ranh giới tự nhiên giữa châu Á với châu Âu là","options":["Sông Ô-bi.","Dãy U-ran.","Biển Địa Trung Hải.","Dãy Cap-ca."],"answer":"B","explanation":"Dãy U-ran là một trong các ranh giới tự nhiên giữa châu Âu và châu Á."},{"question":"Lãnh thổ châu Âu kéo dài","options":["Từ khoảng 36°B đến 71°B.","Từ khoảng 36°N đến 71°N.","Từ khoảng 36°20′B đến 34°51′B.","Từ vòng cực Bắc đến xích đạo."],"answer":"A","explanation":"Lãnh thổ châu Âu nằm trong khoảng 36°B đến 71°B theo nội dung đề."},{"question":"Châu Âu tiếp giáp với các biển và đại dương nào?","options":["Bắc Băng Dương, Đại Tây Dương, Thái Bình Dương.","Bắc Băng Dương, Đại Tây Dương, Ấn Độ Dương.","Bắc Băng Dương, Đại Tây Dương, Địa Trung Hải.","Đại Tây Dương, Ấn Độ Dương, Thái Bình Dương."],"answer":"C","explanation":"Châu Âu giáp Bắc Băng Dương, Đại Tây Dương và Địa Trung Hải."},{"question":"Đường bờ biển châu Âu bị cắt xẻ mạnh tạo thành","options":["Nhiều bán đảo, biển, vũng, vịnh ăn sâu vào đất liền.","Nhiều đảo, vũng, vịnh ăn sâu vào đất liền.","Nhiều quần đảo, vũng, vịnh ăn sâu vào đất liền.","Nhiều bán đảo, ô trũng ăn sâu vào đất liền."],"answer":"A","explanation":"Bờ biển khúc khuỷu tạo nên nhiều bán đảo, biển và vũng vịnh."},{"question":"Ở châu Âu, thảm thực vật thảo nguyên ôn đới chủ yếu nằm ở","options":["Phía bắc.","Phía nam.","Phía đông nam.","Phía tây."],"answer":"C","explanation":"Thảo nguyên ôn đới tập trung ở phía đông nam châu Âu."},{"question":"Đặc điểm giới sinh vật đới lạnh ở châu Âu là","options":["Thực vật chủ yếu là rừng lá rộng.","Thực vật chủ yếu là rêu, địa y, cây bụi.","Thực vật chủ yếu là rừng lá kim.","Động vật đa dạng."],"answer":"B","explanation":"Rêu, địa y và cây bụi thích nghi với khí hậu lạnh."},{"question":"Đặc điểm nào KHÔNG ĐÚNG với quá trình đô thị hóa ở châu Âu?","options":["Ngành kinh tế chủ yếu ở đô thị là nông nghiệp.","Đô thị hóa diễn ra nhanh, xuất hiện nhiều đô thị lớn.","Các đô thị nối liền nhau thành các dải đô thị.","Đô thị hóa ở nông thôn ngày càng mở rộng."],"answer":"A","explanation":"Hoạt động kinh tế ở các đô thị châu Âu không chủ yếu là nông nghiệp."},{"question":"Cụm đô thị xuyên biên giới của châu Âu nằm ở đâu?","options":["Từ Li-vơ-pun (Anh) đến Côn (Đức).","Từ Pa-ri (Pháp) đến Ma-đrít (Tây Ban Nha).","Từ Pa-ri (Pháp) đến Luân Đôn (Anh).","Từ Mát-xcơ-va (Nga) đến Ki-ép (U-crai-na)."],"answer":"A","explanation":"Dải đô thị xuyên biên giới trong đề kéo dài từ Li-vơ-pun đến Côn."},{"question":"Dân cư châu Âu chủ yếu thuộc chủng tộc","options":["Môn-gô-lô-ít.","Nê-grô-ít.","Ơ-rô-pê-ô-ít.","Ô-xtra-lô-ít."],"answer":"C","explanation":"Theo cách phân loại trong tài liệu học, dân cư châu Âu chủ yếu thuộc nhóm Ơ-rô-pê-ô-ít."},{"question":"Quy mô dân số châu Âu năm 2020 là","options":["747 triệu người.","4 641,1 triệu người.","1 340 triệu người.","36 triệu người."],"answer":"A","explanation":"Theo số liệu đề ôn tập, châu Âu có khoảng 747 triệu người năm 2020."},{"question":"Từ cuối thế kỉ XX đến đầu thế kỉ XXI, số lượng người di cư đến châu Âu từ châu lục, khu vực nào ngày càng nhiều?","options":["Châu Đại Dương.","Châu Phi, Trung Đông.","Châu Nam Cực.","Châu Mỹ."],"answer":"B","explanation":"Châu Phi và Trung Đông là những khu vực có nhiều người di cư đến châu Âu."},{"question":"Lãnh thổ châu Á trải dài từ","options":["Vòng cực Bắc đến vòng cực Nam.","Chí tuyến Bắc đến vòng cực Nam.","Vòng cực Bắc đến khoảng 10°N.","Vòng cực Bắc đến chí tuyến Nam."],"answer":"C","explanation":"Theo phạm vi lãnh thổ nêu trong đề, châu Á kéo dài từ vùng cực Bắc đến khoảng 10°N."},{"question":"Phần đất liền châu Á tiếp giáp với các châu lục là","options":["Châu Âu và châu Phi.","Châu Đại Dương và châu Phi.","Châu Âu và châu Mỹ.","Châu Mỹ và châu Đại Dương."],"answer":"A","explanation":"Phần đất liền châu Á tiếp giáp với châu Âu và châu Phi."},{"question":"Vùng trung tâm châu Á có địa hình chủ yếu là","options":["Vùng núi cao, đồ sộ và hiểm trở nhất thế giới.","Vùng đồi núi thấp.","Các đồng bằng châu thổ rộng lớn.","Đồng bằng ven biển nhỏ hẹp."],"answer":"A","explanation":"Khu vực trung tâm châu Á tập trung nhiều núi cao và sơn nguyên đồ sộ."},{"question":"Dãy núi cao và đồ sộ nhất châu Á là","options":["Hi-ma-lay-a.","Côn Luân.","Thiên Sơn.","Cap-ca."],"answer":"A","explanation":"Hi-ma-lay-a là dãy núi cao và đồ sộ nhất châu Á."},{"question":"Thực vật điển hình của đới nóng ở châu Á là","options":["Rừng lá rộng.","Rừng lá kim.","Hoang mạc.","Rừng nhiệt đới."],"answer":"D","explanation":"Rừng nhiệt đới là kiểu thực vật tiêu biểu của vùng nóng ẩm."},{"question":"Đới thiên nhiên nào chiếm diện tích lớn nhất ở châu Á?","options":["Đới lạnh.","Đới ôn hòa.","Đới nóng.","Các đới có diện tích bằng nhau."],"answer":"B","explanation":"Đới ôn hòa chiếm diện tích lớn nhất ở châu Á theo đề ôn tập."},{"question":"Ở châu Á phổ biến là các kiểu khí hậu","options":["Gió mùa và lục địa.","Gió mùa và núi cao.","Hải dương và lục địa.","Gió mùa và hải dương."],"answer":"A","explanation":"Hai kiểu khí hậu phổ biến ở châu Á là gió mùa và lục địa."},{"question":"Tổng diện tích đất liền và các đảo phụ thuộc ở châu Á là","options":["14,1 triệu km².","10,5 triệu km².","8,5 triệu km².","44,4 triệu km²."],"answer":"D","explanation":"Diện tích châu Á khoảng 44,4 triệu km²."},{"question":"Khu vực có mạng lưới sông ngòi kém phát triển ở châu Á là","options":["Bắc Á.","Đông Á.","Đông Nam Á và Nam Á.","Tây Á và Trung Á."],"answer":"D","explanation":"Tây Á và Trung Á có khí hậu khô hạn nên sông ngòi kém phát triển."},{"question":"Hiện nay, dân cư châu Á có xu hướng","options":["Chuyển biến theo hướng già hóa.","Cân bằng giới tính.","Chuyển biến theo hướng trẻ hóa.","Chuyển biến cơ cấu dân số trẻ."],"answer":"A","explanation":"Dân cư châu Á đang có xu hướng già hóa."},{"question":"Các chủng tộc chủ yếu ở châu Á là","options":["Nê-grô-ít và Môn-gô-lô-ít.","Ơ-rô-pê-ô-ít và Ô-xtra-lô-ít.","Môn-gô-lô-ít và Ô-xtra-lô-ít.","Môn-gô-lô-ít, Ô-xtra-lô-ít, Ơ-rô-pê-ô-ít."],"answer":"D","explanation":"Đáp án được lấy theo cách phân chia trong tài liệu ôn tập."},{"question":"Hai tôn giáo lớn có nguồn gốc ra đời tại Ấn Độ là","options":["Phật giáo và Ấn Độ giáo.","Ki-tô giáo và Hồi giáo.","Phật giáo và Ki-tô giáo.","Ấn Độ giáo và Hồi giáo."],"answer":"A","explanation":"Phật giáo và Ấn Độ giáo đều khởi nguồn ở Ấn Độ."},{"question":"Dân cư châu Á tập trung chủ yếu ở","options":["Đông Á, Tây Á, Trung Á.","Nam Á, Đông Nam Á, phía Đông của Đông Á.","Bắc Á, Tây Á, Trung Á.","Bắc Á, Nam Á, Trung Á."],"answer":"B","explanation":"Dân cư tập trung đông ở Nam Á, Đông Nam Á và phía đông của Đông Á."},{"question":"Năm 2020, tỉ lệ dân đô thị của châu Á đạt","options":["74,9%.","82,6%.","43,5%.","51,1%."],"answer":"D","explanation":"Theo số liệu được sử dụng trong đề, tỉ lệ dân đô thị châu Á năm 2020 là 51,1%."},{"question":"Năm 2020, đô thị đông dân nhất châu Á là","options":["Tô-ky-ô.","Đê-li.","Thượng Hải.","Đắc-ca."],"answer":"A","explanation":"Theo số liệu năm 2020 được sử dụng trong đề, Tô-ky-ô là đô thị đông dân nhất châu Á."}],"tf":[{"passage":"Khí hậu châu Âu có sự phân hóa từ bắc xuống nam và từ tây sang đông, tạo nên các đới và kiểu khí hậu khác nhau. Đới khí hậu cận cực quanh năm giá lạnh, lượng mưa trung bình dưới 500 mm. Đới khí hậu ôn đới có sự phân hóa thành các kiểu khí hậu khác nhau. Khí hậu ôn đới hải dương ôn hòa, mùa đông tương đối ấm, mùa hạ mát, có mưa quanh năm, lượng mưa trung bình năm từ 800–1 000 mm trở lên. Khí hậu ôn đới lục địa có mùa đông lạnh và khô, mùa hạ nóng và ẩm, lượng mưa nhỏ, trung bình năm khoảng 500 mm, mưa chủ yếu vào mùa hạ. Đới khí hậu cận nhiệt ở châu Âu có kiểu khí hậu cận nhiệt Địa Trung Hải: mùa hạ nóng và khô, thời tiết ổn định; mùa đông ấm và mưa nhiều hơn, lượng mưa trung bình năm khoảng 500–700 mm. Ngoài ra, khí hậu ở các vùng núi có sự phân hóa theo độ cao.","statements":[{"text":"Châu Âu có 3 đới khí hậu chính là: đới lạnh, đới ôn hòa và đới nóng.","answer":false},{"text":"Phần lớn lãnh thổ châu Âu có khí hậu ôn đới.","answer":true},{"text":"Càng vào sâu trong lục địa, khí hậu càng ấm vào mùa đông, mát vào mùa hạ và mưa càng nhiều.","answer":false},{"text":"Khí hậu châu Âu có sự phân hóa theo độ cao điển hình là ở vùng núi An-pơ.","answer":true}]},{"passage":"Từ thế kỉ XIX, quá trình công nghiệp hóa khiến số dân đô thị của châu Âu tăng nhanh, cùng với đó là sự xuất hiện các đô thị lớn. Ở các vùng công nghiệp lâu đời, nhiều đô thị mở rộng và nối liền với nhau tạo thành các dải đô thị, cụm đô thị xuyên biên giới như dải đô thị kéo dài từ Li-vơ-pun (Anh) đến Côn (Đức). Việc phát triển sản xuất công nghiệp ở vùng nông thôn cùng với việc mở rộng ngoại ô của các đô thị đã thúc đẩy nhanh quá trình đô thị hóa nông thôn, tạo nên các đô thị vệ tinh. Châu Âu là châu lục có mức độ đô thị hóa cao, năm 2020 khoảng 75% số dân châu Âu sống ở khu vực đô thị.","statements":[{"text":"Từ thế kỉ XIX, số dân đô thị của châu Âu có xu hướng giảm.","answer":false},{"text":"Ở các vùng công nghiệp lâu đời, nhiều đô thị mở rộng và nối liền với nhau tạo thành các đô thị vệ tinh.","answer":false},{"text":"Phần lớn dân cư châu Âu sinh sống tại các vùng nông thôn và làm việc trong lĩnh vực nông nghiệp truyền thống.","answer":false},{"text":"Châu Âu có mức độ đô thị hóa cao.","answer":true}]},{"passage":"Các quốc gia châu Âu rất chú trọng bảo vệ sự đa dạng sinh học. Các hệ sinh thái trên cạn và dưới nước ở châu Âu được bảo tồn tương đối tốt. Để giữ gìn đa dạng sinh học, các quốc gia châu Âu đã ban hành nhiều chính sách bảo vệ và phát triển rừng bền vững, giảm thiểu các nguyên nhân gây ô nhiễm môi trường đất và môi trường nước.","statements":[{"text":"Bảo vệ đa dạng sinh học là một trong những ưu tiên của các quốc gia châu Âu.","answer":true},{"text":"Bảo vệ đa dạng sinh học giúp giảm nguy cơ ô nhiễm môi trường và cải thiện sức khỏe cho cộng đồng.","answer":true},{"text":"Các hoạt động khai thác rừng và sử dụng hóa chất trong nông nghiệp không gây suy giảm đa dạng sinh học ở châu Âu.","answer":false},{"text":"Châu Âu đã ban hành các chính sách bảo vệ và phát triển rừng bền vững, giảm thiểu các nguyên nhân gây ô nhiễm môi trường đất và môi trường nước.","answer":true}]},{"passage":"Liên minh châu Âu (EU) là một trong bốn trung tâm kinh tế lớn trên thế giới. EU có 3 nước công nghiệp hàng đầu thế giới (nhóm G7). Là trung tâm trao đổi hàng hóa và dịch vụ lớn nhất thế giới, EU chiếm hơn 31% trị giá xuất khẩu hàng hóa và dịch vụ của thế giới (năm 2020). EU là đối tác thương mại hàng đầu của 80 quốc gia. EU là trung tâm tài chính lớn trên thế giới. Các ngân hàng nổi tiếng, uy tín ở EU có tác động lớn đến hệ thống tài chính và tiền tệ của thế giới.","statements":[{"text":"3 nước công nghiệp hàng đầu thế giới của EU là Đức, Anh, Pháp.","answer":false},{"text":"Năm 2020, khoảng 70% trị giá xuất khẩu hàng hóa và dịch vụ của thế giới là của các nước ngoài EU.","answer":true},{"text":"Việt Nam là một trong những đối tác thương mại hàng đầu của EU.","answer":true},{"text":"Hệ thống tài chính và tiền tệ của thế giới ít chịu tác động bởi các ngân hàng lớn ở EU.","answer":false}]},{"passage":"Khí hậu châu Á phân hóa đa dạng thành nhiều đới. Mỗi đới lại gồm nhiều kiểu khí hậu, có sự khác biệt lớn về chế độ nhiệt, gió và mưa. Khí hậu gió mùa và khí hậu lục địa chiếm diện tích lớn nhất. Khí hậu châu Á phân hóa tạo nên sự đa dạng của các sản phẩm nông nghiệp và hình thức du lịch ở các khu vực khác nhau. Châu Á là nơi chịu nhiều tác động của thiên tai và biến đổi khí hậu.","statements":[{"text":"Khí hậu châu Á phân hóa thành 5 đới khí hậu (cực và cận cực, ôn đới, cận nhiệt, nhiệt đới, xích đạo và cận xích đạo) với nhiều kiểu khí hậu khác nhau.","answer":true},{"text":"Các kiểu khí hậu phổ biến ở châu Á là gió mùa và hải dương.","answer":false},{"text":"Sản phẩm nông nghiệp của châu Á đa dạng là do khí hậu phân hóa đa dạng.","answer":true},{"text":"Thiên tai và biến đổi khí hậu ở châu Á xảy ra thường xuyên.","answer":true}]}]};
+const ABC='ABCD';
+const STORAGE_KEY='diali7-mobile-2026-v2';
+const total=DATA.mcq.length + DATA.tf.reduce((n,g)=>n+g.statements.length,0);
+const steps=DATA.mcq.length+DATA.tf.length;
+let current=0;
+let answers={};
+const byId=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const refFor=i=>i<DATA.mcq.length?'m'+i:'t'+(i-DATA.mcq.length);
+function correctFor(key){
+  if(/^m\d+$/.test(key)) {const i=+key.slice(1); return DATA.mcq[i]?.answer;}
+  const m=/^t(\d+)_(\d+)$/.exec(key);
+  if(m) {const statement=DATA.tf[+m[1]]?.statements[+m[2]]; return statement ? (statement.answer?'T':'F'):undefined;}
+  return undefined;
+}
+function load(){
+  try {const state=JSON.parse(localStorage.getItem(STORAGE_KEY)||'null');
+    if(!state||typeof state!=='object')return;
+    for(const [k,v] of Object.entries(state.answers||{})) {
+      const right=correctFor(k);
+      if(right&&typeof v==='string'&&('ABCDTF'.includes(v))){answers[k]=v;}
+    }
+    if(Number.isInteger(state.current)&&state.current>=0&&state.current<=steps)current=state.current;
+  }catch(e) { /* Private mode or blocked storage: app remains functional. */ }
+}
+function save(){try {localStorage.setItem(STORAGE_KEY,JSON.stringify({answers,current}));}catch(e){} }
+function stats(){const keys=Object.keys(answers);const right=keys.filter(k=>answers[k]===correctFor(k)).length;
+  const mc=keys.filter(k=>k[0]==='m').length;
+  const mcRight=keys.filter(k=>k[0]==='m'&&answers[k]===correctFor(k)).length;
+  return {done:keys.length,right,wrong:keys.length-right,mc,mcRight,tf:keys.length-mc,tfRight:right-mcRight};
+}
+function renderButton(key,value,text,label){
+  const a=answers[key];const correct=correctFor(key);
+  const chosen=a!==undefined;
+  const clazz=chosen?(value===correct?'right':value===a?'wrong':'dim'):'';
+  return `<button type="button" class="option ${clazz}" data-key="${key}" data-value="${value}" ${chosen?'disabled':''} aria-label="${esc(label)}"><span class="letter">${esc(label)}</span>${text?`<span>${esc(text)}</span>`:''}</button>`;
+}
+function feedback(key,explanation){
+ const selected=answers[key];if(selected===undefined)return '';
+ const right=correctFor(key);const ok=selected===right;
+ let rightText=right==='T'?'Đúng':right==='F'?'Sai':right;
+ if(key[0]==='m'){const q=DATA.mcq[+key.slice(1)]; rightText+=`. ${q.options[ABC.indexOf(right)]}`;}
+ return `<div class="feedback ${ok?'good':'bad'}" role="status"><b>${ok?'✓ Chính xác!':'✕ Chưa đúng.'}</b>${ok?'':` Đáp án đúng: <b>${esc(rightText)}</b>.`}${explanation?`<div class="feedback-detail">${esc(explanation)}</div>`:''}</div>`;
+}
+function renderMCQ(i){const q=DATA.mcq[i];const key='m'+i;
+ return `<section class="card" aria-labelledby="questionHeading"><div class="tag">Phần I · Câu ${i+1} / 28</div><h2 class="question-title" id="questionHeading">${esc(q.question)}?</h2><div class="options">${q.options.map((opt,j)=>renderButton(key,ABC[j],opt,ABC[j])).join('')}</div>${feedback(key,q.explanation)}</section>`;
+}
+function renderTF(i){const g=DATA.tf[i];return `<section class="card" aria-labelledby="questionHeading"><div class="tag">Phần II · Câu ${i+1} / 5</div><h2 class="question-title" id="questionHeading">Đọc thông tin và chọn Đúng hoặc Sai</h2><div class="reading">${esc(g.passage)}</div><div class="tf-group">${g.statements.map((s,j)=>{const key='t'+i+'_'+j;return `<section class="tf-item"><h3>${'abcd'[j]}) ${esc(s.text)}</h3><div class="tf-opts">${renderButton(key,'T','', 'Đúng')}${renderButton(key,'F','','Sai')}</div>${feedback(key,'Đối chiếu với đoạn thông tin trên và kiến thức Địa lí đã học.')}</section>`;}).join('')}</div></section>`;}
+function renderResults(){const s=stats();let detail='Bạn chưa hoàn thành đề.';if(s.done===total)detail='Bạn đã hoàn thành tất cả 48 lượt trả lời.';
+ const items=[];
+ for(let i=0;i<DATA.mcq.length;i++){const k='m'+i;items.push({k,label:String(i+1),target:i});}
+ for(let i=0;i<DATA.tf.length;i++)for(let j=0;j<4;j++){const k='t'+i+'_'+j;items.push({k,label:`${i+1}${'abcd'[j]}`,target:DATA.mcq.length+i});}
+ const mark=items.map(item=>{const v=answers[item.k];const cls=v===undefined?'not-done':v===correctFor(item.k)?'done-good':'done-bad';return `<button class="review-jump ${cls}" type="button" data-jump="${item.target}" aria-label="Xem lại câu ${item.label}">${esc(item.label)}</button>`;}).join('');
+ return `<section class="card results"><div class="tag">Kết quả thi thử</div><h2 class="question-title">${esc(detail)}</h2><div class="score-number">${(s.right/total*10).toFixed(2).replace('.',',')}<span style="font-size:22px;color:var(--muted)">/10</span></div><p class="small-note">Điểm quy đổi tham khảo: mỗi lượt trả lời có trọng số bằng nhau</p><div class="result-metrics"><div class="metric"><strong>${s.right}/${total}</strong><span>Đúng toàn bài</span></div><div class="metric"><strong>${s.wrong}</strong><span>Số lượt sai</span></div><div class="metric"><strong>${s.mcRight}/28</strong><span>Trắc nghiệm đúng</span></div><div class="metric"><strong>${s.tfRight}/20</strong><span>Đúng/Sai đúng</span></div></div><p class="small-note">Đã trả lời ${s.done}/${total} lượt. ${s.done<total?'Các câu chưa làm được tính là 0 điểm trong điểm tạm tính.':''}</p><div class="result-actions"><button type="button" class="main-btn" id="shareResult">Chia sẻ kết quả</button><button type="button" class="main-btn secondary" id="reviewUnanswered">${s.done<total?'Đến câu chưa làm':'Xem lại bài'}</button></div><h3 class="review-title">Chạm số câu để xem lại</h3><div class="review-list">${mark}</div><p class="small-note">Xanh: đúng · Đỏ: sai · Trắng: chưa làm</p></section>`;
+}
+function updateProgress(){const s=stats();byId('progressText').textContent=`Đã làm ${s.done}/${total}`;byId('scoreText').textContent=`Đúng ${s.right} · Sai ${s.wrong}`;byId('meterFill').style.width=(100*s.done/total)+'%';
+  if(current===steps)byId('stepText').textContent='Tổng kết';
+  else if(current<28)byId('stepText').textContent=`Câu ${current+1}/28 · Trắc nghiệm`;
+  else byId('stepText').textContent=`Câu ${current-27}/5 · Đúng/Sai`;
+  byId('prev').disabled=current===0;
+  byId('next').textContent=current===steps?'Về câu đầu ↻':current===steps-1?'Xem kết quả →':'Tiếp →';
+  byId('bottomHint').hidden=current===steps;
+}
+function render({keepScroll=false}={}){
+ const panel=byId('stage');panel.innerHTML=current===steps?renderResults():current<28?renderMCQ(current):renderTF(current-28);
+ updateProgress();save();
+ if(!keepScroll)window.scrollTo({top:0,behavior:'instant'});
+}
+function choose(key,value){if(Object.prototype.hasOwnProperty.call(answers,key))return;
+ const right=correctFor(key);if(!right||!['A','B','C','D','T','F'].includes(value))return;
+ answers[key]=value;render({keepScroll:true});
+}
+function move(to){current=Math.max(0,Math.min(steps,to));render();}
+function reset(){if(Object.keys(answers).length && !confirm('Xóa toàn bộ kết quả đã làm trên thiết bị này để làm lại?'))return;answers={};move(0);}
+async function shareResult(){const s=stats();const desc=`Tôi luyện đề Địa lí 7: đúng ${s.right}/${total} lượt, điểm tạm tính ${(s.right/total*10).toFixed(2)}/10. Bạn thử làm nhé!`;
+ const url=location.protocol==='https:'?location.href.split('#')[0]:'';
+ const shareText=desc+(url?'\n'+url:'');
+ try {
+   if(navigator.share&&url){await navigator.share({title:'Thi thử Địa lí lớp 7',text:desc,url});return;}
+   if(navigator.clipboard&&window.isSecureContext){await navigator.clipboard.writeText(shareText);alert('Đã sao chép kết quả. Bạn có thể dán vào Zalo hoặc Messenger.');return;}
+ }catch(e){if(e.name==='AbortError')return;}
+ prompt('Sao chép kết quả để gửi:',shareText);
+}
+byId('stage').addEventListener('click',e=>{
+ const btn=e.target.closest('button');if(!btn)return;
+ if(btn.dataset.key){choose(btn.dataset.key,btn.dataset.value);return;}
+ if(btn.dataset.jump!==undefined){move(+btn.dataset.jump);return;}
+ if(btn.id==='shareResult'){shareResult();return;}
+ if(btn.id==='reviewUnanswered'){
+   const first=Array.from({length:28},(_,i)=>({key:'m'+i,target:i})).concat(DATA.tf.flatMap((g,i)=>g.statements.map((s,j)=>({key:`t${i}_${j}`,target:28+i})))).find(x=>answers[x.key]===undefined);
+   move(first?first.target:0);
+ }
+});
+byId('prev').addEventListener('click',()=>move(current-1));
+byId('next').addEventListener('click',()=>move(current===steps?0:current+1));
+byId('restart').addEventListener('click',reset);
+byId('jumpResult').addEventListener('click',()=>move(steps));
+load();render();
+</script>
+</body>
+</html>
